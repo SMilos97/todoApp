@@ -1,7 +1,19 @@
 import styles from "./style/style.module.css";
 import AddIcon from "@mui/icons-material/Add";
+import { useState } from "react";
+import SingleTodo from "../individualTodo/SingleTodo";
 
 export default function Main() {
+    const [allTodos, setAllTodos] = useState([]);
+    const [todo, setTodo] = useState();
+
+    const formHandler = (e) => {
+        e.preventDefault();
+        const newTodo = [...allTodos, { text: todo, isCompleted: false }];
+        setAllTodos(newTodo);
+        setTodo("");
+    };
+
     return (
         <div className={styles.container}>
             <h1>TODO APP</h1>
