@@ -1,7 +1,7 @@
 :root {
-    --primaryColor: #14365D;
-    --secondaryColor: #2F3C8F;
-    --brownColor: #A96762;
+    --primaryColor: #145d51;
+    --secondaryColor: #2b2d3f;
+    --brownColor: #775f5d;
     --orangeColor: #D85C27;
     --pinkColor: #B999BE;
   }
@@ -13,7 +13,7 @@
       sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: #14365D;
+    background-color: var(--primaryColor);
     color: white;
   }
   
